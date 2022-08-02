@@ -1,39 +1,34 @@
 {
     "schemaVersion": 1,
-    "id": "modid",
+    "id": "passivepregen",
     "version": "${version}",
   
-    "name": "Example Mod",
-    "description": "This is an example description! Tell everyone what your mod is about!",
+    "name": "Passive Chunk Pregenerator",
+    "description": "This mod generates chunks passively around players, offline or online, and the worldspawn to generate chunks that will most likely be needed in the near future.",
     "authors": [
-      "Me!"
+      "agnor99"
     ],
     "contact": {
-      "homepage": "https://fabricmc.net/",
-      "sources": "https://github.com/FabricMC/fabric-example-mod"
+      "sources": "https://github.com/agnor99/passive-chunk-pregenerator"
     },
   
     "license": "CC0-1.0",
-    "icon": "assets/modid/icon.png",
+    "icon": "pregen-logo.png",
   
     "environment": "*",
     "entrypoints": {
       "main": [
-        "com.example.examplemod.ExampleMod"
+        "dev.agnor.passivepregen.PassivePregenFabric"
       ]
     },
     "mixins": [
-      "modid.mixins.json"
+      "passivepregen.mixins.json"
     ],
-  
     "depends": {
       "fabricloader": ">=0.13",
       "fabric": "*",
       "minecraft": "1.18.x",
       "java": ">=17"
-    },
-    "suggests": {
-      "another-mod": "*"
     }
   }
   

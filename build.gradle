@@ -31,7 +31,13 @@ subprojects {
             rename { "${it}_${mod_name}" }
         }
     }
+    dependencies {
+        compileOnly 'org.projectlombok:lombok:1.18.24'
+        annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
+        testCompileOnly 'org.projectlombok:lombok:1.18.24'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+    }
     repositories {
 
         mavenCentral()
@@ -61,3 +67,14 @@ subprojects {
         enabled = false
     }
 }
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "io.freefair.gradle:lombok-plugin:6.5.0.3"
+    }
+}
+apply plugin: "io.freefair.lombok"
