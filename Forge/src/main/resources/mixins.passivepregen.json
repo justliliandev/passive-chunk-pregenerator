@@ -11,6 +11,7 @@
     ],
     "injectors": {
       "defaultRequire": 1
-    }
-  }
+    },
+    "refmap": "mixins.passivepregen.refmap.json"
+}
   

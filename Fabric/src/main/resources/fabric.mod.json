@@ -11,7 +11,9 @@
     "contact": {
       "sources": "https://github.com/agnor99/passive-chunk-pregenerator"
     },
-  
+    "accessWidener" : "passivepregenerator.accesswidener",
+    "__comment": "for quilt",
+    "access_widener" : "passivepregenerator.accesswidener",
     "license": "CC0-1.0",
     "icon": "pregen-logo.png",
   
@@ -22,7 +24,7 @@
       ]
     },
     "mixins": [
-      "passivepregen.mixins.json"
+      "mixins.passivepregen.json"
     ],
     "depends": {
       "fabricloader": ">=0.13",

@@ -24,9 +24,8 @@ apply plugin: 'org.spongepowered.mixin'
 archivesBaseName = "${mod_name}-forge-${minecraft_version}"
 
 mixin {
-    add sourceSets.main, "passivepregen.refmap.json"
-
-    config "passivepregen.mixins.json"
+    add sourceSets.main, "mixins.passivepregen.refmap.json"
+    config "mixins.passivepregen.json"
 }
 
 minecraft {
