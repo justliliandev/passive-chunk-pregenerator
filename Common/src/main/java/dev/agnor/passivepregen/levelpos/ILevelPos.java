@@ -21,9 +21,7 @@ public interface ILevelPos {
         return (int)coord / 16;
     }
 
-    default int loadDistance() {
-        return 25;
-    }
+    int loadDistance();
 
     default boolean isCompleted() {
         return false;

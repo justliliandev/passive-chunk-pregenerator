@@ -1,5 +1,6 @@
 package dev.agnor.passivepregen.levelpos;
 
+import dev.agnor.passivepregen.platform.Services;
 import lombok.Getter;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -17,6 +18,11 @@ public class DynamicPlayerLevelPos implements ILevelPos {
     @Override
     public ServerLevel getServerLevel() {
         return player.getLevel();
+    }
+
+    @Override
+    public int loadDistance() {
+        return Services.PLATFORM.getPlayerLoadDistance();
     }
 
     @Override

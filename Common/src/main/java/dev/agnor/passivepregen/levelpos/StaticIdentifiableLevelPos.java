@@ -2,6 +2,7 @@ package dev.agnor.passivepregen.levelpos;
 
 import com.mojang.serialization.Dynamic;
 import dev.agnor.passivepregen.Constants;
+import dev.agnor.passivepregen.platform.Services;
 import lombok.Getter;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtOps;
@@ -44,6 +45,6 @@ public class StaticIdentifiableLevelPos extends StaticLevelPos {
     }
 
     public int loadDistance() {
-        return 25;
+        return Services.PLATFORM.getPlayerLoadDistance();
     }
 }

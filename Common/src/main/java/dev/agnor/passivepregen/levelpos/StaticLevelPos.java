@@ -36,7 +36,7 @@ public class StaticLevelPos implements ILevelPos {
     }
 
     public int loadDistance() {
-        return 50;
+        return Services.PLATFORM.getSpawnLoadDistance();
     }
 
 }
